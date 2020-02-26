@@ -81,7 +81,7 @@ class Resque_Job
 				Resque_Job_Status::create($id);
 			} else {
 				$statusInstance = new Resque_Job_Status($id);
-				$statusInstance->update($id, Resque_Job_Status::STATUS_WAITING);
+				$statusInstance->update(Resque_Job_Status::STATUS_WAITING);
 			}
 		}
 
